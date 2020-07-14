@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index 1.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="min-box">
+            <div class="floor-tab-head">
+                <div class="floor-current-tab">
+                    <p class="tab-title">今日疯抢</p>
+                </div>
+                <div class="floor-current-tab">
+                    <p class="tab-title">量贩装</p>
+                </div>
+            </div>
+            <div class="floor-tab-content">
+                <a href="#" class="right-detail-a">
+                    <div class="right-detail">
+                        <div class="title-wrap">
+                            <img class="cla-icon"
+                                src="https://img.alicdn.com/tfs/TB12RqQewMPMeJjy1XdXXasrXXa-23-23.png">
+                            <span class="tab-item-title">零食欢乐购</span>
+                        </div>
+                        <div>
+                            <span class="tab-desp">爆款直降</span>
+                        </div>
+                    </div>
+                    <img class="item-img" src="https://img.alicdn.com/tfs/TB1_O_LgSrqK1RjSZK9XXXyypXa-400-400.jpg">
+
+                </a>
+            </div>
+
+            <div class="floor-tab-content">
+                <a href="#" class="right-detail-a">
+                    <div class="right-detail">
+                        <div class="title-wrap">
+                            <img class="cla-icon"
+                                src="https://img.alicdn.com/tfs/TB12RqQewMPMeJjy1XdXXasrXXa-23-23.png">
+                            <span class="tab-item-title">爆款直降</span>
+                        </div>
+                        <div>
+                            <span class="tab-desp">粮油调味</span>
+                        </div>
+                    </div>
+                    <img class="item-img" src="https://img.alicdn.com/tfs/TB1jNScP6TpK1RjSZKPXXa3UpXa-400-400.jpg">
+
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // var one = document.getElementsByClassName("floor-tab-content")[0];
+        // var tow = document.getElementsByClassName("floor-current-tab")[0];
+
+
+        var one = document.querySelectorAll(".floor-current-tab")
+        var tow = document.querySelectorAll(".floor-tab-content")
+
+
+        for (let i = 0; i < one.length; i++) {
+            one[i].onclick = function () {
+                for (var j = 0; j < tow.length; j++) {
+                    one[j].style.background = 'rgb(241,241,241)';
+                    tow[j].style.display = "none";
+                }
+                one[i].style.background = "#00B262";
+                tow[i].style.display = "block";
+            }
+        }
+
+        var i = 1
+        function run() {
+            if (i % 2 == 1) {
+                one[0].style.background = "#00B262";
+                tow[0].style.display = "block";
+                one[1].style.background = 'rgb(241,241,241)';
+                tow[1].style.display = "none";
+            } else {
+                one[1].style.background = "#00B262";
+                tow[1].style.display = "block";
+                one[0].style.background = 'rgb(241,241,241)';
+                tow[0].style.display = "none";
+            }
+            i++;
+        }
+
+        setInterval(run, 1000)
+
+    </script>
+</body>
+
+</html>

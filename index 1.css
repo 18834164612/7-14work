@@ -1,0 +1,89 @@
+ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 484px;
+    height: 316px;
+    margin-left: 13px;
+    float: left;
+    display: block;
+    position: relative;
+    background-color: #fff;
+}
+
+.min-box {
+    width: 462px;
+    height: 282px;
+    margin: 10px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.09);
+    position: relative;
+}
+.floor-tab-head {
+    overflow: hidden;
+    background-color: #F1F1F1;
+}
+.floor-current-tab {
+    height: 57px;
+    width: 231px;
+    line-height: 30px;
+    padding: 0 20px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #00B262;
+    float: left;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.tab-title {
+        margin-top: 16px;
+        font-size: 18px;
+        line-height: 20px;
+        display: block;
+}
+.floor-tab-detail {
+   width: 462px;
+   height: 225px;
+}
+.right-detail {
+    position: absolute;
+    top: 153px;
+    height: 87px;
+    width: 291px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-color: rgba(0,0,0,0);
+    background-image: url(https://img.alicdn.com/tfs/TB1AnTXewMPMeJjy1XcXXXpppXa-290-87.png);
+    z-index: 99;
+}
+.title-wrap {
+    margin-left: 26px;
+    margin-top: 8px;
+}
+.cal-icon {
+    width: 23px;
+    height: 23px;
+    margin-top: -10px;
+}
+.tab-item-title {
+    margin-left: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #00B262;
+}
+.tab-desp {
+    margin-left: 26px;
+    font-size: 20px;
+    letter-spacing: 1px
+}
+.item-img {
+    float: right;
+    margin-top: 10px;
+    margin-right: 30px;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+}
